@@ -1,0 +1,166 @@
+/* Position, margin, padding, size
+left: 10px;
+margin: 10px;
+padding: 10px;
+width: 100%;
+height: 100%;*/
+/* Layout, color, shape
+display: flex;
+flex-direction: column;
+justify-content: center;
+flex-wrap: wrap;
+text-align: center;
+background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+background: rgba( 255, 255, 255, 0.4 );
+
+color: white;
+border: 10px;
+border-radius: 25px;
+box-shadow: 10px 10px;
+text-shadow: 0 0 3px red; 
+*/
+@font-face {
+  font-family: Special Font;
+  src: url('https://static1.squarespace.com/static/5e80e07acc76e2321552d6bf/t/5ed43b4c30af07074f877b16/1590967117048/magnolia_sky.ttf');
+}
+
+header, footer
+{
+  /* Position, margin, padding, size */
+  /* Layout, color, shape */
+  text-align: center;
+}
+
+h2
+{
+  font-family: Special Font;
+}
+
+html, body{
+  /* Position, margin, padding, size */
+  margin: 0px;
+  height: 100%;
+  /* Layout, color, shape */
+  display: flex;
+  flex-flow: column;
+}
+
+navbar
+{
+  /* Position, margin, padding, size */
+  padding: 5px 0px 5px 0px;
+  /* Layout, color, shape */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+items
+{
+  /* Position, margin, padding, size */
+  width: 100%;
+  height: 100%;
+  /* Layout, color, shape */
+  display: grid;
+}
+
+item
+{
+  /* Position, margin, padding, size */
+  /* border: 1px solid; */
+  /* Layout, color, shape */ 
+  display: flex;
+  overflow: auto;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+break 
+{
+  flex-basis: 100%;
+  height: 0;
+}
+cell:empty::before{content:'\00a0';visibility:hidden}
+cell
+{
+  /* Position, margin, padding, size */
+  min-width: 0;
+  margin-left: 5px;
+  /* Layout, color, shape */
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-flow: row wrap;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+view
+{
+  width: 100%;
+  height: 100%;
+}
+edit
+{
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+card
+{
+  /* Position, margin, padding, size */
+  display: inline-block;
+  vertical-align:top;
+  width: 20%;
+  height: 20%;
+  margin-top: 10px;
+  padding: 10px;
+  /* Layout, color, shape */
+  border-radius: 10px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.2), rgba(255,255,255,0.8));
+  font-size: 20px;
+}
+
+a
+{
+  /* Position, margin, padding, size */
+  /* Layout, color, shape */
+  text-decoration: none;
+}
+
+button 
+{
+  /* Position, margin, padding, border, size */
+  position: relative;
+  border: 0px;
+  margin: 1px;
+  /* Layout, color, shape */
+  border-radius: 4px;
+}
+button:after
+{
+content: '';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.2), rgba(255,255,255,0.8));
+}
+video {
+  /* Position, margin, padding, size */
+  width: 100%;
+  object-fit: fill;
+  height: 100%;
+  /* Layout, color, shape */
+}
+img
+{
+  width: 100px;
+  height: 100px;
+  background: blue;
+  border: solid 1px;
+  border-radius: 25% solid 1px;
+}
